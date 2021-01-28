@@ -1,0 +1,155 @@
+body,html{
+    display: inline;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Goldman', cursive;
+      
+    
+    
+    }
+    body{ background-color: black;
+ 
+  
+  
+    }
+
+
+    #grayout {
+        background-image:url(Images/Sliedeshow/drone1.jpg);
+        background-size: cover;
+        filter: blur(50px);
+        position: fixed;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.5;
+      z-index: -9999;
+   }
+    #wrapper{
+    z-index: 1;  
+    display: grid;
+    grid-template-columns: 1fr 1.5fr  3fr 1.5fr 1fr;
+    grid-column-gap:2px ;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 12vh;
+    
+    height: 10%;
+    align-content: center;
+    justify-content: center;
+    
+    }
+    #sliedebutton{
+   
+      width: 100%;
+    position: relative;
+    bottom: 1vh;
+      text-align: center;
+ 
+    
+  
+  
+    }
+    
+  
+  #slieder3{
+  background-color: black;
+  }
+  button{
+  
+     opacity: 0.6;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+  
+    text-decoration: none;
+    border-radius: 50%;
+    transition: opacity 200ms;
+    z-index: 2;
+    border: none;
+    transition: background-color 250ms ease-in-out, width 250ms ease-in-out;
+    
+    }
+    button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    }
+  
+  button:focus{
+    outline: none;
+    border: none;
+  }
+    
+    
+    img{
+    
+        width: 100%;
+        border-radius: 20px;
+        box-shadow:
+    0 2.3px 1.9px rgba(0, 0, 0, 0.018),
+    0 5.4px 4.3px rgba(0, 0, 0, 0.026),
+    0 9.7px 7.7px rgba(0, 0, 0, 0.032),
+    0 16.1px 12.8px rgba(0, 0, 0, 0.038),
+    0 26.5px 21.2px rgba(0, 0, 0, 0.044),
+    0 46.2px 37px rgba(0, 0, 0, 0.052),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+    }
+    h1{
+      text-align: center;
+      font-size: 70px;
+      margin-top:4% ;
+      color: white;
+    }
+    .gridbox{
+     
+      display: flex; 
+      height: 100%;
+      align-items: center;
+    }
+    #img1, #img5{
+    opacity: 0.5;
+    
+    }
+    #img2, #img4{
+      opacity: 0.8;
+    }
+    
+  
+    #text-block {
+      border-radius: 20px;
+      left:32vw;
+      bottom: 0.5vh;
+      width: 200px;
+      opacity: 0.5;
+      position: absolute;
+      display: inline-block;
+    
+      background-color: black;
+      color: white;
+    
+    }
+  
+  
+    @media (max-width:1000px){
+        #img1, #img2,  #img4, #img5{
+        display:none;
+        }
+        #img3{
+            width: 80vw;
+        }
+        #sliedebutton{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            justify-content: space-around;
+               
+        }
+      
+        
+        
+        
+        
+        }

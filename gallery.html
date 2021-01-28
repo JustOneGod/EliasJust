@@ -1,26 +1,84 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drohnen    </title>
+    <title>Drohnen </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sliedeshowStyle.css">
+
 </head>
+
 <body>
-
-
     <nav>
-  
         <a href="index.html"><b>How to</b></a>
-<a id="active" href="gallery.html"><b>Sliedeshow</b></a> 
-
-</nav>
-
+        <a id="active" href="gallery.html"><b>Sliedeshow</b></a>
+    </nav>
 
 
-    <h1>Hier entsteht eine Sliedeshow über Drohnenbilder</h1>
-    <div id="wrapper" > <img id="img2" src="Imgaes/drone2.jpg" alt="drone2"></div> 
+
+
+
+
+    <div id="flexbox">
+
+
+
+
+
+        <div id="wrapper">
+
+
+            <div class="gridbox">
+
+                <div id="img1"><img src="Images/Sliedeshow/drone1.jpg"> </div>
+
+            </div>
+
+
+
+            <div class="gridbox">
+                <div id="img2"><img src="Images/Sliedeshow/drone2.jpg"></div>
+            </div>
+
+            <div class="gridbox">
+                <div id="img3"><img src="Images/Sliedeshow/drone3.jpg"></div>
+
+
+
+            </div>
+
+            <div class="gridbox">
+                <div id="img4"><img src="Images/Sliedeshow/drone4.jpg"></div>
+            </div>
+
+            <div class="gridbox">
+
+
+                <div id="img5"><img src="Images/Sliedeshow/drone5.jpg"></div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="sliedebutton">
+
+
+        <button type="button" class ="slieder" id="slieder1" onclick="button(1)"></button>
+        <button type="button" class ="slieder" id="slieder2" onclick="button(2)"></button>
+
+        <button type="button" class ="slieder" id="slieder3" onclick="button(3)"></button>
+
+        <button type="button" class ="slieder" id="slieder4" onclick="button(4)"></button>
+        <button type="button" class ="slieder" id="slieder5" onclick="button(5)"></button>
+    </div>
+
+
+    <div id="grayout"></div>
 </body>
+<script src="sliedeshow.js" defer></script>
 </html>
