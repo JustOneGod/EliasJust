@@ -13,7 +13,82 @@ body,html{
   
     }
 
+/* Textformating */
 
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
+
+}
+h2{
+    text-align: center;
+    padding: 1em;
+
+}
+h3{
+background-color: rgba(143, 143, 143, 0.144);
+text-align: center;
+padding: 0.5em 0px 0.5em 0em;
+margin-top: 1em;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    
+}
+a{
+    text-decoration: none; 
+    color: black;
+}
+
+.textbox{
+background-color: rgba(143, 143, 143, 0.383);
+
+padding: 0.5em 2em 2em 2em;
+
+z-index: 2;
+}
+nav{
+    background-color: black;
+
+    width: 100%;
+  
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    vertical-align:middle;
+}
+
+nav a{
+ 
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+
+    background-color: black;
+    transition: 200ms   background-color;
+}
+
+nav a:hover{
+ 
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+nav #active{
+    color:white;
+    background-color: rgb(53, 53, 53);
+   
+
+}
     #grayout {
         background-image:url(Images/Sliedeshow/drone1.jpg);
         background-size: cover;
